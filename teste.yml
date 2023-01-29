@@ -1,0 +1,19 @@
+name : "ELTON"
+age: 18
+active : true 
+key:
+    key: value
+list: 
+    - 1
+    - 2
+    - key:
+        key2: value 
+        key3: value2
+
+longText: > 
+    Et ad anim velit sit ullamco ea aliqua. 
+    Nostrud est ea cillum enim irure qui non. 
+    Officia ullamco cupidatat veniam eu eiusmod. 
+    Lorem aliqua aliquip laborum esse aliquip. Commodo occaecat
+     cillum qui ea velit nisi Lorem non anim in magna culpa adipisicing non.
+next: 8888

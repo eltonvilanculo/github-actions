@@ -1,0 +1,16 @@
+name: Shell commands test
+
+on : [push]
+
+jobs:
+    run-shell-commands:
+        runs-on: ubuntu-20.04
+        steps:
+          - name: Print a string 
+            run: echo "Hello script for git"
+          - name: Check version
+            run: 
+                node -v 
+                php -v
+
+
