@@ -16,7 +16,14 @@ jobs:
             run: 
                 ls
             shell: bash
-
+    run-windows-command:
+        runs-on: windows-latest
+        steps:
+          - name : Show my tree 
+            run: 
+                tree 
+            shell: cmd
+            
 
 
 
