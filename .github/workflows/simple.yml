@@ -21,7 +21,9 @@ jobs:
         steps:
           - name : Show my tree 
             run: 
-                tree 
+                tree
+                dir
+                pwd 
             shell: cmd
             
 
