@@ -11,6 +11,12 @@ jobs:
           - name: Check version
             run: 
                 node -v 
-                php -v
+                npm  -v 
+          - name: bash command 
+            run: 
+                ls
+            shell: bash
+
+
 
 
