@@ -1,0 +1,16 @@
+name: Teting
+
+on: [push]
+
+jobs:
+    my-job:
+        runs-on: ubuntu-20.04
+        steps:
+          - name: Printing random stuff
+            run: ls
+    my-second-job: 
+                 runs-on: windows-latest
+                 steps:
+                   - name : print ip
+                     run: ipconfig
+                     shell: cmd

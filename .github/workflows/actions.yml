@@ -1,0 +1,13 @@
+name : Trying with actions
+
+on: [push] 
+
+jobs:
+  run-js-actions :
+      runs-on: ubuntu-20.04
+      steps:
+        - name : Print dynamic names 
+          run: 
+              ls
+  
+ 
