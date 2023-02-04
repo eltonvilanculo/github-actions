@@ -1,13 +1,18 @@
-name : Trying with actions
+name : Git-hub-actions 
 
-on: [push] 
+on: [push]
 
 jobs:
-  run-js-actions :
+    run-git-hub-external-actions :
       runs-on: ubuntu-20.04
       steps:
-        - name : Print dynamic names 
-          run: 
-              ls
-  
- 
+        - name: Simple Greeting JS action
+          uses:  actions/hello-world-javascript-action@v1
+          with:
+                who-to-greet : Elton Vilanculo
+        - name: Greeting JS output
+          run: echo "${{setps.greet.output.time}}"
+               echo "Done!"
+            
+                     
+
