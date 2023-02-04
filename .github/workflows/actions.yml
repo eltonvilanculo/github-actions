@@ -13,7 +13,7 @@ jobs:
                 who-to-greet : Elton Vilanculo
         - name: Greeting JS output
           run: echo "${{steps.greet.outputs.time}}"
-               echo "Done!"
+               echo "Done! testing"
             
                      
 
