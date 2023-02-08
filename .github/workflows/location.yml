@@ -16,5 +16,4 @@ jobs:
            - name: Using checkout external action from github 
              uses: actions/checkout@v1
            - name : Listing after action checkout 
-             run: pwd
-                  ls -a 
+             run: ls -a 
