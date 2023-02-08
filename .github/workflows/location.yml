@@ -13,3 +13,8 @@ jobs:
            - name : list names of repositories
              run: ls -a 
              shell: bash
+           - name: Using checkout external action from github 
+             uses: actions/checkout@v3
+           - name : Listing after action checkout 
+             run: pwd
+                  ls -a 
