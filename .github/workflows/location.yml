@@ -1,0 +1,15 @@
+name : Commands for location
+
+on: [push]
+
+
+jobs:
+    findout-github-location :
+         runs-on: ubuntu-20.04
+         steps:
+           - name : pwd verification
+             run: pwd 
+             shell: bash
+           - name : list names of repositories
+             run: ls -a 
+             shell: bash
