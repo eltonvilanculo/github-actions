@@ -1,0 +1,22 @@
+name: 'Action workflow with other triggers'
+
+on: [push]
+
+jobs:
+    run-github-actions:
+        runs-on: ubuntu-latest
+        steps:
+         - name: list files
+           run:
+               pwd
+               ls
+               ll
+               lll
+               echo "new testing and stuff"
+         - name: new tests
+           run:
+            echo "returning to lessons after some time"
+         
+                   
+
+
