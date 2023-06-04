@@ -1,7 +1,11 @@
 name: 'Action workflow with other triggers'
 
-on: [push]
+on: 
 
+    schedule:
+     - cron: "0/5 * * * 0-6"
+    push:
+     
 jobs:
     run-github-actions:
         runs-on: ubuntu-latest
@@ -16,14 +20,14 @@ jobs:
          - name: new tests
            run:
             echo "returning to lessons after some time"
-    try-another-job:
-        runs-on: ubuntu
-        steps:
-            - name: new tests after some time 
-              run:
-                node 1+1 
-                echo 3+3 
-                echo Done        
+    # try-another-job:
+    #     runs-on: ubuntu
+    #     steps:
+    #         - name: new tests after some time 
+    #           run:
+    #             node 1+1 
+    #             echo 3+3 
+    #             echo Done        
          
                    
 
