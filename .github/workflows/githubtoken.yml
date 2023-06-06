@@ -7,4 +7,7 @@ jobs:
             - name: Debug my first commit 
               run: |
                    echo "Im' here" 
+            - name : Testing second one 
+              run: |
+                    echo "second one"       
 
