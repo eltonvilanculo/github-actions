@@ -29,7 +29,7 @@ jobs:
                    git config --global user.email "bot@github.com"
                    git config --global user.name "bot"
                    git fetch
-                   git checkout main
+                   git branch -m main
                    git branch --set-upstream-origin origin/main
                    git pull 
                    ls -a
