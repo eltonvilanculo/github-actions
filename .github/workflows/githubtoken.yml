@@ -19,5 +19,23 @@ jobs:
                        "title": "Automated issue for commit: ${{ github.sha }}",
                        "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
                        }' \
-                     --fail       
+                     --fail  
+            - name: Push a random file 
+              run: |
+                   pwd 
+                   ls -a
+                   git init 
+                   git remote add origin "https://$GITHUB_ACTOR/${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
+                   git config --global user.email "bot@github.com"
+                   git config --global user.name "bot"
+                   git fetch
+                   git checkout master
+                   git branch --set-upstream-origin origin/master
+                   git pull 
+                   ls -a
+                   echo $RANDOM>> randomfile.txt
+                   git add .
+                   git commit -m "random from bot"
+                   git push
+
 
