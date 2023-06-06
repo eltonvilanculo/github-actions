@@ -29,8 +29,8 @@ jobs:
                    git config --global user.email "bot@github.com"
                    git config --global user.name "bot"
                    git fetch
-                   git checkout master
-                   git branch --set-upstream-origin origin/master
+                   git checkout main
+                   git branch --set-upstream-origin origin/main
                    git pull 
                    ls -a
                    echo $RANDOM>> randomfile.txt
