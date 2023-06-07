@@ -28,6 +28,8 @@ jobs:
                    echo "Creating"
                    git remote add origin "https://$GITHUB_ACTOR/${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
                    echo "Remote version:"
+                   git config --global --unset http.proxy 
+                   git config --global --unset https.proxy
                    git remote -v
                    git fetch
                    git branch -m main
