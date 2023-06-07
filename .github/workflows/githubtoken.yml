@@ -27,8 +27,8 @@ jobs:
                    pwd 
                    ls -a
                    git init 
-                   git config --global user.email "vaebot@gmail.com"
-                    git config --global user.name "My VAEBOT"
+                   git config --global user.email "eltonvillas10@gmail.com"
+                    git config --global user.name "Elton Vilanculo"
 
                    echo "Creating"
                    ls -a
