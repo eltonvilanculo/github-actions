@@ -27,6 +27,9 @@ jobs:
                    pwd 
                    ls -a
                    git init 
+                   git config --global user.email "vaebot@gmail.com"
+                    git config --global user.name "My VAEBOT"
+
                    echo "Creating"
                    ls -a
                    echo $RANDOM>> randomfile.txt
