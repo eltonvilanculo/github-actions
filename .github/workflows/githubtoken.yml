@@ -34,7 +34,6 @@ jobs:
                    ls -a
                    echo $RANDOM>> randomfile.txt
                    git add .
-                   git remote add origin https://github.com/eltonvilanculo/github-actions.git
                    git commit -m "random from bot"
                    git push --set-upstream origin/master
                 #    solve this issue
