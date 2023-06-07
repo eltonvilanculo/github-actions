@@ -20,7 +20,7 @@ jobs:
                        "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
                        }' \
                      --fail  
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v1
 
             - name: Push a random file 
               run: |
