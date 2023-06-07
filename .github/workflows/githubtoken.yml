@@ -26,8 +26,8 @@ jobs:
                    ls -a
                    git init 
                    echo "Creating"
-                #    git remote add origin "https://$GITHUB_ACTOR/${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
-                #    echo "Remote version:"
+                   git remote add origin "https://$GITHUB_ACTOR/${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
+                   echo "Remote version:"
                 #    git remote -v
                 #    git config --global user.email "bot@github.com"
                 #    git config --global user.name "bot"
