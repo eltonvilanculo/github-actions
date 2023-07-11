@@ -6,6 +6,9 @@ jobs :
          matrix:
           node_selected_version : [12,13,14,15]
           os_version: [ubuntu-latest,macos-latest,windows-latest]
+          exclude:
+          - node_selected_version: [13,15]
+          - os_version: [windows-latest,macos-latest]
         runs-on: ${{ matrix.os_version }}
         steps:
              - name : Verify node version ${{ matrix.os_version }}
