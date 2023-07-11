@@ -10,8 +10,10 @@ jobs :
             - node_selected_version : 18
               os_version : macos-latest
           exclude:
-          - node_selected_version: [13,15]
-            os_version: [windows-latest,macos-latest]
+          - node_selected_version: 13
+            os_version: windows-latest
+          - node_selected_version: 15
+            os_version: windows-latest  
         runs-on: ${{ matrix.os_version }}
         steps:
              - name : Verify node version ${{ matrix.os_version }}
