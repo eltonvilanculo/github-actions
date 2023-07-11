@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: Debug my first commit 
               run: |
-                   echo "Im' here" 
+                  
             - name: Create issue using REST API
               run: |
                      curl --request POST \
@@ -27,8 +27,8 @@ jobs:
                    pwd 
                    ls -a
                    git init 
-                   git config --global user.email "eltonvillas10@gmail.com"
-                   git config --global user.name "Elton Vilanculo"
+                   git config --global user.email "whatrulooking4@gmail.com"
+                   git config --global user.name "Testing"
                    git checkout master
                    echo "Creating"
                    ls -a
