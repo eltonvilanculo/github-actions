@@ -2,13 +2,17 @@ name: Matrix
 on: push
 jobs :
     diff-node-versions:
-        runs-on: ubuntu-latest
+        strategy:
+         matrix:
+          node_selected_version : [12,13,14,15]
+          os_version: [ubuntu-latest,macos-latest,windows-latest]
+        runs-on: ${{ matrix.os_version }}
         steps:
-             - name : Verify node version
+             - name : Verify node version ${{ matrix.os_version }}
                run: node -v
              - uses: actions/setup-node@v3
 
                with:
-                node-version: 6
+                node-version: ${{ matrix.node_selected_version }}
              - name : verify ater change     
                run : node -v    

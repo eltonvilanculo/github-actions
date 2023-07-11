@@ -1,0 +1,14 @@
+name: Matrix 
+on: push
+jobs :
+    diff-node-versions:
+        runs-on: ubuntu-latest
+        steps:
+             - name : Verify node version
+               run: node -v
+             - uses: actions/setup-node@v3
+
+               with:
+                node-version: 6
+             - name : verify ater change     
+               run : node -v    
